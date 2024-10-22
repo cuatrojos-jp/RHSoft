@@ -1,3 +1,14 @@
 .navbar-pastelblue {
     background-color: #3ABAF6;
 }
+
+.btn-grey {
+    background-color: #7b92ad;
+    border: none;
+    color: #ffffff;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  } 
