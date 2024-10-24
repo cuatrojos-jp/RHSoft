@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/media_queries.css" />
     <link rel="stylesheet" href="assets/bs/css/" />
+    <style>
+        /* Estilo para el título  */
+        .titulo-incapacidades {
+            font-size: 3rem; 
+            color: #000; 
+        }
+      
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-pastelblue">
@@ -28,7 +36,8 @@
             width="45"
             style="margin-right: 20px"
           />
-  
+
+          <h1 class="titulo-incapacidades">HISTORIAL DE INCAPACIDADES</h1>
           <!-- Botón de navegación en pantallas pequeñas -->
           <button
             class="navbar-toggler"
@@ -43,27 +52,6 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!-- inicio dropdown -->
-              <div class="dropdown">
-                <button
-                  class="btn btn-grey dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Nominas
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/RHSoft/nominas.html">Nominas</a></li>
-                  <li>
-                    <a class="dropdown-item" href="/RHSoft/vacacion.html">Permiso Vacacional</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/RHSoft/incapacidades.html">Tiempo incapacidad</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- fin del dropdown -->
             </ul>
             <img src="assets/images/nopfp.png" alt="nopfp" height="45">
           </div>
@@ -74,8 +62,7 @@
   class="table-responsive"
 >
   <table
-    class="table table-bordered table-hover table-striped "
-  >
+    class="table table-bordered table-hover table-striped ">
     <thead>
       <tr>
         <th scope="col">Columna 1</th>
