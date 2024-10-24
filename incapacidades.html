@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incapacidades</title>
+    <link rel="stylesheet" href="assets/bs/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/media_queries.css" />
+    <link rel="stylesheet" href="assets/bs/css/" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-pastelblue">
+        <div class="container-fluid">
+          <!-- logotipo -->
+          <img
+            src="assets/images/RHSoft_logo.png"
+            id="logo"
+            alt="RHSoft logo"
+            width="90"
+            style="margin-right: 20px"
+          />
+          <!-- icono de home -->
+          <img
+            src="assets/images/home_icon.png"
+            id="home_icon"
+            alt="home icon"
+            width="45"
+            style="margin-right: 20px"
+          />
+  
+          <!-- Botón de navegación en pantallas pequeñas -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- inicio dropdown -->
+              <div class="dropdown">
+                <button
+                  class="btn btn-grey dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nominas
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/RHSoft/nominas.html">Nominas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/RHSoft/vacacion.html">Permiso Vacacional</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/RHSoft/incapacidades.html">Tiempo incapacidad</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- fin del dropdown -->
+            </ul>
+            <img src="assets/images/nopfp.png" alt="nopfp" height="45">
+          </div>
+        </div>
+      </nav>
+
+      <div
+  class="table-responsive"
+>
+  <table
+    class="table table-bordered table-hover table-striped "
+  >
+    <thead>
+      <tr>
+        <th scope="col">Columna 1</th>
+        <th scope="col">Columna 2</th>
+        <th scope="col">Columna 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+        <td scope="row">1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr class="">
+        <td scope="row">4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+<script src="assets/bs/js/bootstrap.bundle.min.js"></script>
+</html>
