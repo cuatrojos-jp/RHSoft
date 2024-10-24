@@ -1,0 +1,19 @@
+/* Archivostyle.css para dar estilo a la pagina */
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar-pastelblue {
+    background-color: #4A90E2;
+}
+
+#logo {
+    width: 90px;
+}
+
+#home_icon {
+    width: 45px;
+}
+
+/* Añade más estilos personalizados aquí */
