@@ -16,4 +16,8 @@ body {
     width: 45px;
 }
 
+.table-responsive {
+   justify-content: center;
+   align-items: center;
+}
 /* Añade más estilos personalizados aquí */
