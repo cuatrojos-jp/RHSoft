@@ -72,95 +72,113 @@
     </nav>
     <main class="flex-shrink-0 mt-2">
       <div class="container mt-3">
-
+        <!-- Título del formulario -->
         <div class="p-3 mb-3 text-center">
-          <h2 class="mb-0">N&oacute;minas</h2>
+            <h2 class="mb-0">Generaci&oacute;n de N&oacute;minas</h2>
         </div>
 
-        <!-- formulario  -->
-        <form action="#" method="get" id="formulario">
-          <!-- fila 1 -->
-          <div class="row bg-gray rounded-2 py-2">
-            <div class="col-sm-2"></div>
+        <!-- Comienza formulario -->
+        <form
+          action="#"
+          method="get"
+          id="datos_usuario"
+          class="needs-validation"
+          novalidate
+        >
 
-            <div class="col-sm-8">
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  aria-describedby="helpId"
-                />
-                <small id="helpId" class="form-text text-muted"
-                  >Teclee su nombre</small
-                >
-              </div>
+          <!-- Primera fila -->
+          <div class="row mb-3">
+            <div class="col">
+              <label for="nombre_usuario" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                name="nombre_usuario"
+                id="nombre_usuario"
+                placeholder="Nombre"
+                required
+              />
             </div>
-
-            <div class="col-sm-2"></div>
+            <div class="col">
+              <label for="rfc_usuario" class="form-label">RFC</label>
+              <input
+                type="text"
+                class="form-control"
+                name="rfc_usuario"
+                id="rfc_usuario"
+                placeholder="RFC"
+                required
+              />
+            </div>
           </div>
 
-          <!-- fila 2 -->
-          <div class="row bg-gray rounded py-2">
-            <div class="col-sm-2"></div>
-
-            <div class="col-sm-8">
-              <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="apellido"
-                  aria-describedby="helpId"
-                />
-                <small id="helpId" class="form-text text-muted"
-                  >Teclee su apellido</small
-                >
-              </div>
+          <!-- Segunda fila -->
+          <div class="row mb-3">
+            <div class="col">
+              <label for="departamento" class="form-label">Departamento</label>
+              <select
+                class="form-select"
+                name="departamento"
+                id="departamento"
+                required
+              >
+                <option value="" disabled selected>
+                  Seleccione un departamento
+                </option>
+                <option value="recursos_humanos">Recursos Humanos</option>
+                <option value="finanzas">Finanzas</option>
+                <option value="ti">Tecnologías de la Información</option>
+              </select>
             </div>
-
-            <!-- fila 3 -->
-            <div class="row bg-gray rounded-2 py-2">
-              <div class="col-sm-2"></div>
-
-              <div class="col-sm-8">
-                <div class="mb-3">
-                  <input type="date" id="fecha" class="form-control" />
-                  <label for="fecha">Fecha de nacimiento</label>
-                </div>
-              </div>
-
-              <div class="col-sm-2"></div>
+            <div class="col">
+              <label for="NSS_usuario" class="form-label">NSS</label>
+              <input
+                type="text"
+                class="form-control"
+                name="nss_usuario"
+                id="nss_usuario"
+                placeholder="N&uacute;mero de Seguro Social"
+                required
+              />
             </div>
+          </div>
 
-            <div class="row bg-gray rounded-2 py-2">
-              <div class="offset-5 col-2 offset-5">
-                <button
-                  type="submit"
-                  id="enviar"
-                  class="form-control btn btn-primary"
-                >
-                  Enviar
-                </button>
-              </div>
+          <!-- Tercera fila -->
+          <div class="row mb-3">
+            <div class="col text-center">
+              <label for="horas_trab" class="form-label">Horas a Pagar</label>
+              <input
+                type="number"
+                class="form-control"
+                name="horas_trab"
+                id="horas_trab"
+                placeholder="Horas trabajadas"
+                required
+              />
             </div>
+            <div class="col text-center">
+              <label for="salario_hr" class="form-label">Pago por Hora</label>
+              <input
+                type="number"
+                class="form-control"
+                name="salario_hr"
+                id="salario_hr"
+                placeholder="Salario por Hora"
+                required
+              />
+            </div>
+          </div>
 
-            <div class="col-sm-2"></div>
+          <!-- Cuarta fila -->
+          <div class="row">
+            <div class="col text-center">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
           </div>
         </form>
       </div>
     </main>
   </body>
   <script src="assets/bs/js/bootstrap.bundle.min.js"></script>
-      <!-- script para redirijir a vacacionbes-->
-      <script>
-        // Redirigir al seleccionar Permiso Vacacional
-        document.getElementById('opcionesNominas').addEventListener('change', function() {
-            if (this.value === 'permiso_vacacional') {
-                window.location.href = 'vacaciones.html';
-            }
-        });
-      </script>
 </html>
 
