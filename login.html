@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/bs/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/media_queries.css" />
+    <link rel="stylesheet" href="assets/bs/css/" />
+</head>
+
+<body>
+    <main class="flex-shrink-0 mt-2 ">
+        <div style="height: 100px;"></div>
+        
+        <div class="container bg-blue container mt-2 " >
+            <div class="row">
+                <div class="col-4 " ></div>
+                <div class="col-4 ">
+                    <div class="p-2 mb-2 text-center">
+                        <h2 class="" >Login</h2>
+                    </div>
+                    <div class="contenedor">
+                        <img
+                        src="assets/images/login.png"
+                        id="login"
+                        alt="Login"
+                        style="width: 200px; height: auto;"
+                        />
+                    </div>
+
+                    <!-- inicio form -->
+                    <form action="#" method="get" id="acceso_usuario" class="needs-validation" novalidate>
+                        <div class="row mb-1" text="center">
+                            <div class="col">
+                                <label for="nombre_usuario" class="form-label">Usuario</label>
+                                <input type="text" class="form-control" name="acceso_usuario" id="acceso_usuario"
+                                    placeholder="Usuario" required>
+                            </div>
+                        </div>
+                        <div class="row mb-1" text="center">
+                            <div class="col">
+                                <label for="password_usuario" class="form-label">Password</label>
+                                <input type="text" class="form-control" name="password_usuario" id="password_usuario"
+                                    placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div style="height: 20px;"></div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </main>
+</body>
+    <script src="assets/bs/js/bootstrap.bundle.min.js"></script>
+</html>

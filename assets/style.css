@@ -25,3 +25,14 @@ body {
 #home_icon {
     width: 45px;
 }
+
+.contenedor{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 50%; 
+    margin: 0 auto;
+    height: auto;
+    
+}
+
